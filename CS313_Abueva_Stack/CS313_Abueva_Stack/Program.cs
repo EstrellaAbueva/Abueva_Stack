@@ -67,7 +67,7 @@
     /// <summary>
     /// Checlks the string if it is a palindrome or not.
     /// </summary>
-    /// <param name="input">the string to check</param>
+    /// <param name="input">the string to chec</param>
     /// <returns>Boolen data type
     ///             true - if it is a palindrome
     ///             false - if it is not a palindrome
@@ -91,9 +91,12 @@
         while (i < input.Length)
         {
             char element = stack.Peek();
-            stack.Pop();
 
-            if (element != input[i])
+            if (element == input[i])
+            {
+                stack.Pop();
+            }
+            else
             {
                 return false;
             }
