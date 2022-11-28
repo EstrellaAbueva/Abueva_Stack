@@ -1,5 +1,14 @@
 ﻿public class BalancedBrackets
 {
+    /// <summary>
+    /// Check if both characters are a pair.
+    /// </summary>
+    /// <param name="char1">first charactrer</param>
+    /// <param name="char2">second character</param>
+    /// <returns>Boolen data type
+    ///             true - if they match
+    ///             false - if they don't match
+    /// </returns>
     public static Boolean isMatchingPair(char char1, char char2)
     {
         if (char1 == '(' && char2 == ')')
@@ -12,6 +21,15 @@
             return false;
     }
 
+    /// <summary>
+    /// Pushing the input in the stack if they are opening at the same time popping if the character 
+    /// that is in the topn of the stack is the closing of the current character.
+    /// </summary>
+    /// <param name="input">Character array containing brackets, parenthesis, and square brackets.</param>
+    /// <returns>Boolen data type
+    ///             true - if the stack is empty
+    ///             false - if stack is not empty
+    /// </returns>
     public static Boolean BracketsBalanced(char[] input)
     {
         Stack<char> stack = new Stack<char>();
@@ -46,6 +64,14 @@
         }
     }
 
+    /// <summary>
+    /// Checlks the string if it is a palindrome or not.
+    /// </summary>
+    /// <param name="input">the string to check</param>
+    /// <returns>Boolen data type
+    ///             true - if it is a palindrome
+    ///             false - if it is not a palindrome
+    /// </returns>
     static Boolean Palindrome(string input)
     {
         Stack<char> stack = new Stack<char>();
