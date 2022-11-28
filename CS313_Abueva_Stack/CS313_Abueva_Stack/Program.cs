@@ -23,7 +23,7 @@
 
     /// <summary>
     /// Pushing the input in the stack if they are opening at the same time popping if the character 
-    /// that is in the topn of the stack is the closing of the current character.
+    /// that is in the top of the stack is the closing of the current character.
     /// </summary>
     /// <param name="input">Character array containing brackets, parenthesis, and square brackets.</param>
     /// <returns>Boolen data type
@@ -65,9 +65,12 @@
     }
 
     /// <summary>
-    /// Checlks the string if it is a palindrome or not.
+    /// Checks the string if it is a palindrome or not.
+    /// Pushing the first half of the string into the stack.
+    /// Skipping a character if the string length is odd.
+    /// Popping the characters in the stack making sure that they are the same with the one being inputted.
     /// </summary>
-    /// <param name="input">the string to chec</param>
+    /// <param name="input">the string to check</param>
     /// <returns>Boolen data type
     ///             true - if it is a palindrome
     ///             false - if it is not a palindrome
