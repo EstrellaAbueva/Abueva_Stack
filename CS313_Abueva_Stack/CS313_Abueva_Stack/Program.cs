@@ -145,7 +145,6 @@
                     else
                         Console.WriteLine("Not Balanced!Not Accepted.");
                     break;
-
             }
 
             Console.WriteLine("\n\tDo you want to continue: \n\t1 - Yes\n\t2 - No");
